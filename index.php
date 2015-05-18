@@ -1,17 +1,19 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
-        // put your code here
-        ?>
-    </body>
-</html>
+
+<?php
+
+require_once (__DIR__ . "/controller/login-verify.php");
+//pulls the login verification
+require_once (__DIR__ . "/view/header.php");
+if (authenticateUser()) {
+    //function for  the user authentication
+    require_once (__DIR__ . "/view/navagation.php");
+    //if true allows access to post form if true 
+}
+require_once (__DIR__ . "/controller/create-db.php");
+//pulls data from create database.php
+require_once (__DIR__ . "/view/footer.php");
+//puts in html ending brackets
+require_once (__DIR__ . "/controller/read-posts.php");
+//pulls the code needed for seeing all posts
+
+    
