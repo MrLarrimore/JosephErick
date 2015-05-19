@@ -1,8 +1,22 @@
 <?php
 
-require_once (__DIR__ . "/view/login-form.php");
-//pulls the login form data onto this page
+require_once (__DIR__ . "/controller/login-verify.php");
+//pulls the login verification
 require_once (__DIR__ . "/view/header.php");
-//pulls html data into page
+if (authenticateUser()) {
+    //function for  the user authentication
+    require_once (__DIR__ . "/view/navagation.php");
+    //if true allows access to post form if true 
+}
+require_once (__DIR__ . "/controller/create-db.php");
+//pulls data from create database.php
 require_once (__DIR__ . "/view/footer.php");
-//pulls closing brackets
+//puts in html ending brackets
+
+
+    
+
+
+
+
+

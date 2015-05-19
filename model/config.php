@@ -5,12 +5,12 @@ require_once(__DIR__ . "/database.php");
 session_start();
 session_regenerate_id(true);
 
-$path = "/RoldanJ-blog/";
+$path = "/JosephErick/";
 //sets path of data
 $host = "localhost";
 $username = "root";
 $password = "root";
-$database = "blog_db";
+$database = "josepherick_db";
 //determines what each variable represents
 if (!isset($_SESSION["connection"])) {
     //transfers data to session connection
