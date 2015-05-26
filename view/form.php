@@ -9,7 +9,7 @@ if(!authenticateUser()){
 }
 
 ?>
-<h1>Create Blog Post</h1>
+<h1>Compose</h1>
 <!--// the message
 $msg = "First line of text\nSecond line of text";
 
@@ -17,7 +17,7 @@ $msg = "First line of text\nSecond line of text";
 $msg = wordwrap($msg,70);
 
 // send email-->
-mail("someone@example.com","My subject",$msg);
+<!--mail("someone@example.com","My subject",$msg);-->
 
 <!--<form method="post" action='<?php echo $path . "controller/create-post.php" ?>'>==>
     <div>
