@@ -1,6 +1,6 @@
 
 <?php
-
+ 
 require_once (__DIR__ . "/view/header.php");
 //pulls html data into page
 require_once (__DIR__ . "/view/login-form.php");

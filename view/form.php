@@ -10,8 +10,27 @@ if(!authenticateUser()){
 
 ?>
 <h1>Create Blog Post</h1>
+<!--// the message
+$msg = "First line of text\nSecond line of text";
 
-<form method="post" action='<?php echo $path . "controller/create-post.php" ?>'>
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
+
+// send email-->
+mail("someone@example.com","My subject",$msg);
+
+<!--<form method="post" action='<?php echo $path . "controller/create-post.php" ?>'>==>
+    <div>
+        <label for="title">Title: </label>
+        <input type="text" name="title" />  
+        form for title for posts
+    </div>
+
+    <div>
+        <label for="post">Post:</label>
+        <textarea name="post"></textarea>
+        area for typing what you want to say 
+    </div>-->
 
     <div>
         <button type="submit">Submit</button>
