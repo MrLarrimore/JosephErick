@@ -2,7 +2,7 @@
 
 require_once (__DIR__ . "/../model/config.php");
 
-$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+
 // filter sanitize string makes sure you
 $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
 $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
@@ -17,7 +17,6 @@ echo $hashedPassword;
 
 $query = $_SESSION["connection"]->query("INSERT INTO users  SET "
         . "username = '$username',"
-        . "email = '$email',"
         . "password = '$hashedPassword',"
         . "salt ='$salt'");
 //sets salt for password
