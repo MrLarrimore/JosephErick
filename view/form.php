@@ -10,31 +10,19 @@ if(!authenticateUser()){
 
 ?>
 <h1>Compose</h1>
-<!--// the message
-$msg = "First line of text\nSecond line of text";
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
+<?php
+// The message
 
-// send email-->
-<!--mail("someone@example.com","My subject",$msg);-->
+?>
 
-<!--<form method="post" action='<?php echo $path . "controller/create-post.php" ?>'>==>
-    <div>
-        <label for="title">Title: </label>
-        <input type="text" name="title" />  
-        form for title for posts
-    </div>
-
-    <div>
-        <label for="post">Post:</label>
-        <textarea name="post"></textarea>
-        area for typing what you want to say 
-    </div>-->
-
-    <div>
-        <button type="submit">Submit</button>
-        <!-- imprints post-->
-    </div>
-</form>
+<form method="post" action='<?php echo $path . "controller/create-post.php" ?>'>
+    <p>Email adress: <input type="text" name="email" size="30"></p>
+    
+    <p>Subject: <input type="text" name="email" size="30"></p>
+    <p>message:</p>
+    <p><textarea rows="10" cols="20" name="message"></textarea></p>
+    <input type="submit" name="submit" value="submit">
+             
+</form>-->
 
